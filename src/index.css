@@ -1,0 +1,237 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+header {
+  width: 100%;
+}
+
+.divHeader {
+  float: left;
+  padding-left: 1em;
+}
+
+.divnav {
+  float: right;
+}
+
+nav li {
+  float: left;
+  list-style-type: none;
+  padding-right: 1em;
+}
+
+nav li a {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+  font-size: 130%;
+}
+
+nav li a:hover {
+  color: black;
+}
+
+.brazilFlag {
+  width: 40px;
+  height: 30px;
+}
+
+.bottom {
+  text-align: center;
+  padding: 1em;
+}
+
+/* utility class to fix floating problems */
+.fix:before, .fix:after {
+  content: "";
+  display: table;
+}
+
+.fix:after {
+  clear: both;
+}
+
+.fix {
+  /* for older versions of IE */
+  zoom: 1;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #c13584;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #0077B5;
+  color: white;
+}
+
+.fa-github {
+  background: #666;
+  color: white;
+}
+
+.fa-envelope {
+  background: #f5e505;
+  color: white;
+}
+
+.fa-researchgate {
+  background: #07c7bd;
+  background-image: url("/images/researchgate.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 70px;
+  color: white;
+  position: relative;
+  top: 40px;
+}
+
+.social_media a {
+  margin: 1rem;
+}
+
+.social_media {
+  text-align: center;
+}
+
+.top {
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  font-size: 140%;
+  background: #333;
+  background-image: url(https://www.hurtigruten.com/globalassets/photos/inspiration/northern-lights/hub/aurora-borealis-above-snowy-island-vestvagoya-lofoten_swen-stroop.jpg?width=1900&height=950&transform=DownFill);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+article {
+  padding: 1em;
+  text-align: justify;
+  width: 80%;
+  margin: auto;
+  font-size: 130%;
+}
+
+.listCell {
+  margin: 1rem;
+  padding: 1rem;
+  text-align: justify;
+}
+
+.listCell:hover {
+  background-color: #fafcec;
+}
+
+.listCell h2 a {
+  text-decoration: none;
+}
+
+.listCell h2 a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+  .top {
+    font-size: 100%;
+    padding: 1rem;
+  }
+  .divPage .top h1 {
+    font-size: 3rem;
+  }
+  .divnav {
+    width: 110%;
+    float: left;
+    padding-bottom: 10px;
+    margin-left: -30px;
+    margin-top: -20px;
+  }
+  .divHeader {
+    padding-left: 10px;
+  }
+  .divHeader h2 {
+    font-size: 90%;
+  }
+  article {
+    font-size: 100%;
+  }
+  .divnav nav {
+    padding: 0;
+  }
+  .divnav nav li {
+    float: left;
+    list-style-type: none;
+    padding-right: 5px;
+  }
+  .divnav nav li a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    font-size: 100%;
+  }
+  .brazilFlag {
+    position: relative;
+    width: 20px;
+    height: 15px;
+    top: 3px;
+  }
+  article {
+    padding: 0;
+    text-align: justify;
+    width: 99%;
+    margin: auto;
+  }
+}
+
+.remark, .proof, .lemma {
+  padding: 1em;
+  margin: 1em;
+  border: 1px solid #ccc;
+}
+/*# sourceMappingURL=index.css.map */
