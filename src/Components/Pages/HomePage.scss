@@ -1,0 +1,35 @@
+.homepage_top {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    font-size: 140%;
+    background: #333;
+    background-image: url(https://www.hurtigruten.com/globalassets/photos/inspiration/northern-lights/hub/aurora-borealis-above-snowy-island-vestvagoya-lofoten_swen-stroop.jpg?width=1900&height=950&transform=DownFill);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+} 
+.home_top h1 {
+    font-size: 3rem;
+}
+.homepage_myfoto {
+    border-radius: 50%;
+    width: 25%;
+    min-width: 200px;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+}
+
+
+@media(max-width:500px){
+    .homepage_top {
+        font-size: 90%;
+        padding: 1rem;
+    }
+    .homepage_myfoto {
+        min-width: 130px;
+    }
+    .home_top h1 {
+        font-size: 2rem;
+    }
+}

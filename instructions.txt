@@ -1,0 +1,15 @@
+start local server
+@update react-scripts 
+npm install react-scripts@latest
+npm start
+
+build production version
+npm run build
+
+upload to github page
+*copy 'build' directory to marofe.github.io_build and perform the following git commands:
+git init
+git add -A 
+git status 
+git commit -m "description"
+git push origin master

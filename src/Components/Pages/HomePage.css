@@ -1,0 +1,55 @@
+.homepage_top {
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  font-size: 140%;
+  background: #333;
+  background-image: url(../../../public/images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  }
+
+.textName {
+  background-color: #fff;
+  border-radius: 99%;
+  padding-top: 0.3em;
+  padding-bottom: 3em;
+  padding-left: 1em;
+  padding-right: 2em;
+}
+
+.home_top h1 {
+  font-size: 3rem;
+}
+
+.homepage_myfoto {
+  border-radius: 50%;
+  width: 25%;
+  min-width: 200px;
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.homepage_top p {
+  color: black;
+}
+
+.homepage_top h1 {
+  color: black;
+}
+
+@media (max-width: 500px) {
+  .homepage_top {
+    font-size: 90%;
+    padding: 1rem;
+  }
+  .homepage_myfoto {
+    min-width: 130px;
+  }
+  .home_top h1 {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=HomePage.css.map */
