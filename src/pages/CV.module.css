@@ -1,0 +1,70 @@
+.cvWrapper {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.timelineItem {
+  display: flex;
+  gap: 2rem;
+}
+
+.period {
+  flex: 0 0 150px;
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  padding-top: 0.35rem;
+}
+
+.content h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.25rem;
+}
+
+.content h4 {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.content p {
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .timelineItem {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .period {
+    flex: none;
+    padding-top: 0;
+  }
+}

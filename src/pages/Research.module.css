@@ -1,0 +1,47 @@
+.section {
+  padding: 4rem 0;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  max-width: 800px;
+  margin-bottom: 3rem;
+}
+
+.focusGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.focusCard {
+  background-color: var(--secondary-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-color);
+}
+
+.focusCard h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.focusCard p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.placeholder {
+  color: var(--text-muted);
+}
+
+.placeholder a {
+  color: var(--primary-color);
+  font-weight: 500;
+}
