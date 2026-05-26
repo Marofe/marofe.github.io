@@ -3,13 +3,26 @@ import { motion } from 'framer-motion';
 import { ExternalLink, Book, GraduationCap, BookOpen } from 'lucide-react';
 import styles from './Courses.module.css';
 
+interface Course {
+  title: string;
+  description: string;
+  link: string;
+  tags: string[];
+}
+
 const Courses: React.FC = () => {
-  const undergraduateCourses = [
+  const undergraduateCourses: Course[] = [
     {
       title: "Signals and Systems",
       description: "Fundamental concepts of continuous and discrete-time signals and systems, including Fourier, Laplace, and Z-transforms.",
       link: "https://marofe.github.io/sinais-sistemas/",
       tags: ["Signals", "Systems", "Undergraduate"]
+    },
+    {
+      title: "Digital Signal Processing",
+      description: "Analysis and representation of discrete-time signals and systems, DFT/FFT, and design and implementation of FIR and IIR digital filters.",
+      link: "https://marofe.github.io/processamento-digital-sinais/",
+      tags: ["DSP", "Digital Systems", "Signal Processing"]
     },
     {
       title: "Digital Control",
@@ -19,7 +32,7 @@ const Courses: React.FC = () => {
     }
   ];
 
-  const graduateCourses = [
+  const graduateCourses: Course[] = [
     {
       title: "Linear System Theory",
       description: "Graduate-level course covering state-space analysis, controllability, observability, stability, and state-feedback control of linear systems.",
@@ -28,7 +41,7 @@ const Courses: React.FC = () => {
     }
   ];
 
-  const renderCourseCard = (course: any, index: number) => (
+  const renderCourseCard = (course: Course, index: number) => (
     <motion.div 
       key={course.title}
       initial={{ opacity: 0, y: 20 }}
